@@ -9,15 +9,25 @@
     <header>
       <div >Proyecto Parte Final.</div>
     </header>
-    <main></main>
+    <main>
 
-    <center>
-      <h1>Validar Tarjeta de Crédito</h1>
-      <button class="num">Validar</button>
-   
-    </center>
-    </div>
-
+    
+      <center>
+        <h1>Validar Tarjeta de Crédito</h1>
+        
+       <div><label for="cardnumber">Coloca aquí  el número:</label>
+        <input type="text"  
+          id="cardnumber"
+          maxlength="19"
+          required>
+        </input>
+        <button id="btn">Validar</button>
+      </center>
+      </div>
+      <div id="val"></div>
+      <div id="mask"></div>
+    
+    </main>
     <footer></footer>
     <script src="index.js" type="module"></script>
   </body>
