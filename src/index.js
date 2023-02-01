@@ -1,17 +1,27 @@
-import validator from './validator.js';
  
-document.getElementById("btn").addEventListener('click',()=>{
-    // hay que buscar el valor del in´put 
-function enmascarar(cardNumber) {
- 
- validator.maskify(cardNumber);
-}
-const value =  document.getElementById('cardnumber').value
-const creditcardNumber =document.getElementById('cardnumber').value
-//document.getElementById("cardnumber").value= enmascarar(value);
-
-    validator.isvalid()
+ //4083952015263
+ import validator from './validator.js';
   
-//document.getElementById("submit").addEventListener('click',validar,true);
+     document.getElementById("btn").addEventListener("click", validate,false);
+      function validate() {
+        
+        const cardNumber = document.getElementById("creditCardNumber").value
+        const valid = validator.isValid(cardNumber)
+        const cardBrand = validator.getCardBrand(cardNumber);
+        const result = document.getElementById("result");
 
-})
+        if (valid) {
+          
+          result.innerHTML = "Tarjeta " + cardBrand + "\n" + validator.maskify(cardNumber) + "\n Válida";
+          result.classList.remove("invalid");
+          result.classList.add("valid");
+        }
+        else {
+          
+          result.innerHTML = "Tarjeta " + cardBrand + "\n Inválida.";
+          result.classList.remove("valid");
+          result.classList.add("invalid");
+        }
+        result.style.display = "block";
+      };
+    

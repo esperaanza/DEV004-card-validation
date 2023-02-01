@@ -7,28 +7,31 @@
   </head>
   <body>
     <header>
-      <div >Proyecto Parte Final.</div>
-    </header>
-    <main>
+     <script src="index.js" type="module"></script>
+      <div class="hit-the-floor"> 
+       <marquee> <h1>Validar Tarjeta de Crédito</h1></div></marquee>
+     </header>
+     <main>
+     
 
+     <form>
+      <div><label for="creditCardNumber"> Número de la tareja :</label>
+              
+          <input type="text"  
+            id="creditCardNumber"
+           maxlength="19"
+           name="creditCardNumber"
+           required
+           >
+         </input>
+         
+         <button type="submit" id="btn"> Validar Tarjeta</button>
+
+       <div id="result"></div>
+       </form>
+          
+     </main>
+     <footer></footer>
     
-      <center>
-        <h1>Validar Tarjeta de Crédito</h1>
-        
-       <div><label for="cardnumber">Coloca aquí  el número:</label>
-        <input type="text"  
-          id="cardnumber"
-          maxlength="19"
-          required>
-        </input>
-        <button id="btn">Validar</button>
-      </center>
-      </div>
-      <div id="val"></div>
-      <div id="mask"></div>
-    
-    </main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
-</html>
+   </body>
+ </html>
