@@ -32,4 +32,4 @@ Los metódos de validator (isValid y maskify) deben tener cobertura con pruebas 
 El código final debe estar subido en un repositorio en GitHub. La interfaz o pagina web, debe ser "desplegada" (accesible públicamente online) usando GitHub Pages.
 4. Un README que contiene una definición del producto.
 # Resultados Obtenidos.
-![resultado ](file:///C:/Users/Esperanza/proyecto/DEV004-card-validation/resultado.png "resultado ")
+![resultado ]( /resultado.png "resultado ")

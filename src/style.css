@@ -1,6 +1,6 @@
 
 body{
-    background-color:rgb(161, 228, 217);
+    background-color:#DCF2EC;
   }
 
 /*header{
@@ -12,7 +12,7 @@ body{
        
 }*/
 .hit-the-floor {
-  color: #fff;
+  color: rgba(26, 24, 24, 0.959);
   font-size: 2em;
   font-weight: bold;
   font-family: Helvetica;
@@ -31,17 +31,18 @@ body{
   }
   
   .valid {
-    background-color: green;
+    background-color:#2AA4BF;
   }
   
   .invalid {
-    background-color: red;
+    background-color: #B33650;
   }
    
 form {
   width: 500px;
   margin: 0 auto;
   text-align: center;
+
 }
 
 label {
@@ -53,12 +54,14 @@ input[type="text"] {
   padding: 10px;
   width: 100%;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 10px;
+  border: 1px solid #003340
+  
 }
 
 button[type="submit"] {
   padding: 10px 20px;
-  background-color: #0097a7;
+  background-color: #003340;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -71,9 +74,9 @@ button[type="submit"] {
 }
 
 .valid {
-  color: green;
+  color:#2AA4BF;
 }
 
 .invalid {
-  color: red;
+  color: #B33650;
 }
